@@ -879,4 +879,14 @@ public class CPlayer extends CBasePlayer {
 	public void fireRequirementUpdateForAbilities(final CSimulation simulation, final boolean disable) {
 		simulation.fireRequirementUpdateForAbilities(this, disable);
 	}
+
+	private com.etheller.warsmash.parsers.jass.JassAIEnvironment aiScript;
+
+	public com.etheller.warsmash.parsers.jass.JassAIEnvironment getAiScript() {
+		return this.aiScript;
+	}
+
+	public void setAiScript(final com.etheller.warsmash.parsers.jass.JassAIEnvironment aiScript) {
+		this.aiScript = aiScript;
+	}
 }
